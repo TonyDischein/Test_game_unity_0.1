@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MovePoint1
+  - MovePoint2
+  - MovePoint3
+  - MovePoint4
   layers:
   - Default
   - TransparentFX

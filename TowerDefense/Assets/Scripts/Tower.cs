@@ -11,7 +11,7 @@ public class Tower : MonoBehaviour
     [SerializeField] private GameObject muzzle;
     [SerializeField] private float enemyDetectionDistance = 10f;
 
-    private Weapoints nearestEnemy;
+    private Enemy nearestEnemy;
 
     private void Update()
     {
@@ -36,7 +36,7 @@ public class Tower : MonoBehaviour
     {
         if (nearestEnemy == null)
         {
-            Weapoints[] enemies = FindObjectsOfType<Weapoints>();
+            Enemy[] enemies = FindObjectsOfType<Enemy>();
             if (enemies.Length > 0)
             {
                 foreach (var enemy in enemies)
@@ -48,7 +48,6 @@ public class Tower : MonoBehaviour
                         return;
                     }
                 }
-                Debug.Log("There is no enemies");
             }
         }
         else

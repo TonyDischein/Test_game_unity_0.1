@@ -4,10 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MovePoint1
-  - MovePoint2
-  - MovePoint3
-  - MovePoint4
+  - Enemy
+  - WayPoint
   layers:
   - Default
   - TransparentFX

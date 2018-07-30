@@ -5,9 +5,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     public Transform EndPoint;
-
+    public Transform[] MovePoints;
 
     public float Speed;
+
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +17,6 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector3.MoveTowards(transform.position,EndPoint.position,Time.deltaTime * Speed);
-	}
+        transform.position = Vector3.MoveTowards(transform.position, EndPoint.position, Time.deltaTime * Speed);
+    }
 }
